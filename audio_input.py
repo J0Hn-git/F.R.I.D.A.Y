@@ -44,7 +44,7 @@ def verify_microphone():
         print(f"\n[SUCCESS] Successfully captured {total_bytes} audio bytes from your microphone!")
         print("[VERIFICATION PASSED] Your microphone is actively recording audio data.")
         
-        return frames
+        return frames, RATE
         
     except Exception as e:
         print(f"\n[ERROR] Failed to access microphone: {e}")
